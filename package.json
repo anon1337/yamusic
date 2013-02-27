@@ -1,6 +1,9 @@
 {
 	"name": "yamusic",
 	"version": "0.0.1",
+	"bin" : {
+		"yamusic": "./index.js"
+	},
 	"dependencies": {
 		"scrape": "*",
 		"optimist": "*",
