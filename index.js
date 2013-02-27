@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var opt = require('optimist')
     .alias('o', 'output-dir')
     .usage('yamusic command [text] [options]')
