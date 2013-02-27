@@ -1,0 +1,12 @@
+{
+	"name": "yamusic",
+	"version": "0.0.1",
+	"dependencies": {
+		"scrape": "*",
+		"optimist": "*",
+		"colors": "*",
+		"async": "*",
+		"wget": "*",
+		"progress": "*"
+	}
+}
