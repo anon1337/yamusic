@@ -2,9 +2,17 @@
 
 var opt = require('optimist')
     .alias('o', 'output-dir')
+    .alias('d', 'debug')
+    .alias('l', 'log')
     .usage('yamusic command [text] [options]')
     .demand(1);
 var argv = opt.argv;
+
+if(argv.debug) {
+    var curlLogger = require('./lib/curl-logger');
+    var curl = require('scrape/node_modules/curlrequest'); //NOT SAFE!
+    curlLogger.decorate(curl, argv.log);
+}
 
 var commands = require('./lib/commands');
 
